@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F3ED"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="103dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="38dp"
+        android:layout_toStartOf="@+id/result"
+        android:text="Total :"
+        android:textColor="#24426C"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="34dp"
+        android:textColor="#E63946"
+        android:textSize="38dp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:layout_above="@+id/eTxt"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="65dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Grade Calculater"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#E63946"
+        android:textSize="48sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+    <EditText
+        android:id="@+id/eTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/eTxt2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:hint="Quizes %15"
+        android:hyphenationFrequency="normal"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#A8DADC"
+        android:textSize="21dp" />
+
+    <EditText
+        android:id="@+id/eTxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/eTxt3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:hint="HomeWorks %25"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#A8DADC"
+        android:textSize="21dp" />
+
+    <EditText
+        android:id="@+id/eTxt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/eTxt4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:hint="Mid Terms %30"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#A8DADC"
+        android:textSize="21dp" />
+
+    <EditText
+        android:id="@+id/eTxt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonReset"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="62dp"
+        android:ems="10"
+        android:hint="Final %30"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#A8DADC"
+        android:textSize="21dp" />
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/result"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#457B9D"
+        android:text="Reset"
+        android:textSize="19dp"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/buttonCalc"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/total"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="32dp"
+        android:layout_toStartOf="@+id/buttonReset"
+        android:backgroundTint="#457B9D"
+        android:text="Calculate"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"
+        android:typeface="serif" />
+</RelativeLayout>
